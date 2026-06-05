@@ -1,0 +1,96 @@
+# Repository Labels
+
+# Type
+- name: bug
+  description: Something is not working as expected
+  color: d73a4a
+- name: enhancement
+  description: New feature or improvement
+  color: a2eeef
+- name: documentation
+  description: Documentation changes
+  color: 0075ca
+- name: refactor
+  description: Code refactoring
+  color: 7057ff
+- name: performance
+  description: Performance improvement
+  color: 0e8a16
+- name: test
+  description: Test-related changes
+  color: fbca04
+- name: build
+  description: Build system or CI
+  color: bfd4f2
+- name: security
+  description: Security-related
+  color: e99695
+
+# Severity
+- name: critical
+  description: Critical severity
+  color: b60205
+- name: high
+  description: High severity
+  color: d93f0b
+- name: medium
+  description: Medium severity
+  color: e4e669
+- name: low
+  description: Low severity
+  color: 0e8a16
+
+# Status
+- name: needs-triage
+  description: Needs maintainer review
+  color: fbca04
+- name: needs-reproduction
+  description: Cannot be reproduced yet
+  color: c2e0c6
+- name: needs-design
+  description: Needs design spec
+  color: c5def5
+- name: needs-info
+  description: Needs more information
+  color: f9d0c4
+- name: blocked
+  description: Blocked on another issue or PR
+  color: 000000
+- name: good-first-issue
+  description: Good for newcomers
+  color: 5319e7
+- name: help-wanted
+  description: Maintainers want help
+  color: 008672
+
+# Area
+- name: area:core
+  description: sentinel-core
+  color: 1d76db
+- name: area:agent
+  description: sentinel-agent
+  color: 1d76db
+- name: area:cloud
+  description: sentinel-cloud
+  color: 1d76db
+- name: area:chain
+  description: sentinel-chain
+  color: 1d76db
+- name: area:sdk
+  description: sentinel-sdk
+  color: 1d76db
+- name: area:dashboard
+  description: sentinel-dashboard
+  color: 1d76db
+- name: area:cli
+  description: sentinel-cli
+  color: 1d76db
+- name: area:docs
+  description: sentinel-docs
+  color: 1d76db
+- name: area:firmware
+  description: sentinel-firmware
+  color: 1d76db
+- name: area:mobile
+  description: sentinel-mobile
+  color: 1d76db
