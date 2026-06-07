@@ -1,39 +1,56 @@
 # sentinel-cloud
 
-**Fleet management API and backend services.**
+**Fleet management API for Sentinel Labs.** Fastify + TypeScript reference implementation that registers devices, verifies signed attestation claims, tracks telemetry, computes trust scores, and emits a hash-chained audit log.
 
-- Language: TypeScript
-- License: Apache 2.0
-- Status: Pre-alpha
+[![ci](https://github.com/Sentinels-Today/sentinel-cloud/actions/workflows/ci.yml/badge.svg)](https://github.com/Sentinels-Today/sentinel-cloud/actions/workflows/ci.yml)
+![license](https://img.shields.io/badge/license-Apache--2.0-blue)
+![node](https://img.shields.io/badge/node-%E2%89%A520-green)
 
-## Overview
+## Endpoints
 
-The cloud platform provides fleet registration, RBAC, webhook dispatch, telemetry aggregation, audit export, and billing.
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/healthz` | Liveness probe |
+| GET | `/version` | Server version |
+| POST | `/v1/devices` | Register a device (DID + Ed25519 public key) |
+| GET | `/v1/devices/:did` | Device record |
+| GET | `/v1/devices/:did/trust` | Trust score + level |
+| POST | `/v1/devices/:did/telemetry` | Record heartbeat + telemetry event |
+| POST | `/v1/attestations` | Submit a signed attestation claim |
+| GET | `/v1/audit/:robotId` | Hash-chained audit entries |
 
-## About Sentinel Labs
+Wire-compatible with the [`@sentinels/sdk`](https://github.com/Sentinels-Today/sentinel-sdk) client and shares the deterministic trust formula and canonical-JSON digesting with the Rust [`sentinel-core`](https://github.com/Sentinels-Today/sentinel-core) crates.
 
-Our mission is to support the entire autonomous systems ecosystem.
+## Run
 
-Identity, attestation, telemetry, and audit are our focus points. Cryptography and openness are baked into the core of everything we do.
+```sh
+npm install
+npm run dev       # hot-reload on src/**/*.ts
+# or
+npm run build && npm start
+```
 
-## Ecosystem
+Server defaults: `0.0.0.0:8787`. Override with `PORT` / `HOST` env vars (see `.env.example`).
 
-- [sentinel-core](https://github.com/SentinelsToday/sentinel-core) -- Trust engine
-- [sentinel-agent](https://github.com/SentinelsToday/sentinel-agent) -- On-device daemon
-- [sentinel-cloud](https://github.com/SentinelsToday/sentinel-cloud) -- Fleet management API
-- [sentinel-chain](https://github.com/SentinelsToday/sentinel-chain) -- Solana attestation
-- [sentinel-sdk](https://github.com/SentinelsToday/sentinel-sdk) -- Multi-language SDK
-- [sentinel-cli](https://github.com/SentinelsToday/sentinel-cli) -- Command-line tool
-- [sentinel-dashboard](https://github.com/SentinelsToday/sentinel-dashboard) -- Web UI
-- [sentinel-firmware](https://github.com/SentinelsToday/sentinel-firmware) -- TPM firmware
-- [sentinel-docs](https://github.com/SentinelsToday/sentinel-docs) -- Documentation
+```sh
+curl -s http://localhost:8787/healthz
+# {"status":"ok"}
+```
 
-## Resources
+## Develop
 
-- Website: https://sentinels.today
-- Docs: https://sentinels.today/docs
-- X: @sentinelstoday
+```sh
+npm install
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
 
----
+## Storage
 
-Built with care and intent.
+The reference build uses an in-memory `FleetStore`. Production deployments should replace `src/store.ts` with a Postgres-backed implementation (planned). The HTTP surface and verification logic stay unchanged.
+
+## License
+
+Apache-2.0 — see [LICENSE](./LICENSE).
