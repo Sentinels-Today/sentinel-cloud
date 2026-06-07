@@ -1,6 +1,6 @@
-# Contributing to Sentinel Labs
+# Contributing to Sentinels
 
-Thank you for considering contributing to Sentinel Labs. This document outlines the process for contributing to any repository within the Sentinel Labs organization.
+Thank you for considering contributing to Sentinels. This document outlines the process for contributing to any repository within the Sentinels organization.
 
 ## Table of Contents
 
@@ -141,4 +141,4 @@ All contributors will be listed in the relevant repository's CONTRIBUTORS file. 
 
 ---
 
-Thank you for contributing to Sentinel Labs.
+Thank you for contributing to Sentinels.

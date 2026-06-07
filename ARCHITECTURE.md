@@ -1,8 +1,8 @@
-# Sentinel Labs Architecture
+# Sentinels Architecture
 
 ## Overview
 
-Sentinel Labs builds trust infrastructure for autonomous systems. The architecture is organized around a layered model that separates concerns between on-device software, cloud services, blockchain anchoring, and developer tooling.
+Sentinels builds trust infrastructure for autonomous systems. The architecture is organized around a layered model that separates concerns between on-device software, cloud services, blockchain anchoring, and developer tooling.
 
 ```
 +------------------------------------------------------------------+
@@ -34,7 +34,7 @@ Sentinel Labs builds trust infrastructure for autonomous systems. The architectu
 
 ### Hardware Layer
 
-The hardware layer consists of the physical robot controller and its secure element. Sentinel Labs supports TPM 2.0 and ARM TrustZone as secure enclave options. The secure element stores the device's private key and performs attestation operations.
+The hardware layer consists of the physical robot controller and its secure element. Sentinels supports TPM 2.0 and ARM TrustZone as secure enclave options. The secure element stores the device's private key and performs attestation operations.
 
 ### On-Device Layer
 
@@ -129,7 +129,7 @@ This layer is optional and used when cross-organizational trust is required with
 
 #### sentinel-sdk
 
-Multi-language SDK for integrating Sentinel Labs into custom applications:
+Multi-language SDK for integrating Sentinels into custom applications:
 
 - TypeScript SDK (primary)
 - Rust SDK

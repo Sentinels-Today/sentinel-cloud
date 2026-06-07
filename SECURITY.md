@@ -9,7 +9,7 @@
 
 ## Reporting a Vulnerability
 
-We take the security of Sentinel Labs software seriously. If you believe you have found a security vulnerability, please report it to us as described below.
+We take the security of Sentinels software seriously. If you believe you have found a security vulnerability, please report it to us as described below.
 
 **Do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
 
@@ -44,10 +44,10 @@ Contact admin@sentinels.today for the current PGP key.
 We follow a coordinated disclosure process:
 
 1. The reporter submits the vulnerability to admin@sentinels.today.
-2. Sentinel Labs acknowledges receipt and begins investigation.
-3. Sentinel Labs develops and tests a fix.
-4. Sentinel Labs releases a fix and notifies the reporter.
-5. The reporter and Sentinel Labs coordinate public disclosure timing.
+2. Sentinels acknowledges receipt and begins investigation.
+3. Sentinels develops and tests a fix.
+4. Sentinels releases a fix and notifies the reporter.
+5. The reporter and Sentinels coordinate public disclosure timing.
 
 We aim to release fixes within 30 days of initial report for critical vulnerabilities.
 
@@ -55,9 +55,9 @@ We aim to release fixes within 30 days of initial report for critical vulnerabil
 
 The following are in scope:
 
-- All Sentinel Labs open source repositories
-- Sentinel Labs cloud services (sentinels.today)
-- Sentinel Labs API endpoints
+- All Sentinels open source repositories
+- Sentinels cloud services (sentinels.today)
+- Sentinels API endpoints
 
 The following are out of scope:
 
@@ -67,7 +67,7 @@ The following are out of scope:
 
 ## Bug Bounty
 
-Sentinel Labs does not currently operate a bug bounty program. Security researchers who report valid vulnerabilities will be credited in release notes and, at our discretion, invited to join the security mailing list.
+Sentinels does not currently operate a bug bounty program. Security researchers who report valid vulnerabilities will be credited in release notes and, at our discretion, invited to join the security mailing list.
 
 ## Security Best Practices
 
@@ -80,7 +80,7 @@ Sentinel Labs does not currently operate a bug bounty program. Security research
 
 ### For Deployments
 
-- All Sentinel Labs components support deployment behind a reverse proxy.
+- All Sentinels components support deployment behind a reverse proxy.
 - Use TLS 1.3 for all communications.
 - Enforce key rotation policies.
 - Enable audit logging.

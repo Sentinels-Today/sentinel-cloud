@@ -2,7 +2,7 @@
   "name": "sentinel-cloud",
   "version": "0.1.0",
   "private": true,
-  "description": "Fleet management API for Sentinel Labs",
+  "description": "Fleet management API for Sentinels",
   "license": "Apache-2.0",
   "type": "module",
   "main": "dist/server.js",

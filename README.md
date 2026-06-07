@@ -1,6 +1,6 @@
 # sentinel-cloud
 
-**Fleet management API for Sentinel Labs.** Fastify + TypeScript reference implementation that registers devices, verifies signed attestation claims, tracks telemetry, computes trust scores, and emits a hash-chained audit log.
+**Fleet management API for Sentinels.** Fastify + TypeScript reference implementation that registers devices, verifies signed attestation claims, tracks telemetry, computes trust scores, and emits a hash-chained audit log.
 
 [![ci](https://github.com/Sentinels-Today/sentinel-cloud/actions/workflows/ci.yml/badge.svg)](https://github.com/Sentinels-Today/sentinel-cloud/actions/workflows/ci.yml)
 ![license](https://img.shields.io/badge/license-Apache--2.0-blue)

@@ -1,6 +1,6 @@
 # Roadmap
 
-This document outlines the high-level development roadmap for Sentinel Labs. Timelines are approximate and subject to change based on community feedback and resource availability.
+This document outlines the high-level development roadmap for Sentinels. Timelines are approximate and subject to change based on community feedback and resource availability.
 
 ---
 
